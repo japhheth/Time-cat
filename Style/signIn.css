@@ -1,0 +1,126 @@
+ 
+ /* font */
+@font-face {
+   font-family: TuesdayNight;
+   src: url('../Assets/fonts/TuesdayNight-Regular.otf');
+}
+@font-face {
+   font-family: myfont;
+   src: url('../Assets/fonts/MavenPro-Medium.ttf');
+}
+/* body */
+body {
+   background-color: white;
+   width: 100%;
+   margin: 0px;
+   font-family: myfont;
+   font-size: 18px;
+}
+.font{
+   font-family: TuesdayNight;
+   color: #24195D;
+   font-size: 100px;
+   margin-top: 0;
+}
+.container {
+   margin-top: 53px;
+   margin-left: 127px;
+   margin-right: 127px;
+   height: auto;
+   padding: 0px;
+}
+.header {
+   margin-bottom: 50px;
+   display: flex;
+   justify-content: space-between;
+}
+.icon{
+   width: 27px;
+}
+.logo-div{
+   margin-top: -10px;
+}
+.logo{
+   width: 155px;
+}
+.body-content{
+   margin-top: -15px;
+   position: relative;
+}
+.hide{
+   position: absolute;
+   right: 10px;
+   display: none;
+}
+.hide a{
+   text-decoration: none;
+   color: #24195d;
+   font-weight: bold;     
+}
+::placeholder{
+   color: #24195d;
+   font-family: myfont;
+   font-size: 16px;
+}
+form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+form a{
+   text-decoration: none;
+   color: #24195D;
+}
+input{
+   border: none;
+   border-bottom: 2px solid #FFA200;
+   padding: 15px 20px;
+   outline: none;
+   margin-bottom: 20px;
+   width: 300px;
+   
+}
+input[type=submit]{
+   width: 100px;
+   outline: none;
+   background-color: #24195D;
+   margin-top: 10px;
+   color: white;
+   border-bottom: none !important;
+   border-radius: 6px;
+}
+h1{
+   text-align: center;
+}
+ @media only screen and (max-width: 720px){
+   .header{
+      padding: 0 14px;
+  }
+  
+  .container{
+      margin-left: 0;  
+      width: 100%;   
+      margin-top: 20px;
+  }
+  .signInDiv{
+   padding: 0 14px;
+  }
+  .logo{
+      width: 109px;
+  }
+  input{
+     width: 249px;
+  }
+ }
+ @media only screen and (min-width: 721px) and (max-width: 1024px){
+
+   .header{
+      padding: 0 14px;
+   }
+   .container{
+      margin-left: 0;
+      margin-right: 0;
+
+   }
+ }

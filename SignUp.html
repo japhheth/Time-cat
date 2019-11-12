@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/Style/signUp.css">
+    <title>Time cat</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <div class="logo-div">
+                <img class="logo" src="/Assets/images/Artboard 16.png" alt="logo">
+            </div>
+            <div>
+                <a id="click" href="#"><img class="icon" src="/Assets/images/menu icon blue.svg" alt="toggle"></a>
+            </div>
+        </div>
+        <div class="body-content">
+        <div class="hide">
+            <a href="home.html">Home</a>
+        </div>
+        <div class="signUpDiv">
+        <form action="SignIn.html">
+            <h1 class="font">Sign up</h1>
+            <div>
+                <input class="input" type="email" placeholder="your email" required>
+                <input type="text" placeholder="your company name" required>
+            </div>
+            <div>
+                <input class="input" type="phone" placeholder="your number" required>
+                <input type="number" placeholder="size of employees" required>
+            </div>
+            <div>
+                <input class="input" type="password" placeholder="password" pattern=".{8,16}" required title="Password must be between 8 and 16 characters" required>
+                <input type="password" placeholder="confirm password" pattern=".{8,16}" required title="Password must be between 8 and 16 characters"required>
+            </div>
+            <textarea id="" cols="60" rows="2" placeholder="Tell us about your company" required></textarea>
+            <input type="submit" value="Done">  
+        </form>       
+    </div> 
+    <!-- links to my jquerry CDN -->
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/custom.js"></script>
+</body>
+</html>

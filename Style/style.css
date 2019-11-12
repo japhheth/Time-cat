@@ -1,0 +1,108 @@
+
+
+@font-face {
+    font-family: TuesdayNight;
+    src: url('../Assets/fonts/TuesdayNight-Regular.otf');
+ }
+ @font-face {
+    font-family: myfont;
+    src: url('../Assets/fonts/MavenPro-Medium.ttf');
+ }
+body{
+    font-family: myfont;
+    color: #24195d;
+}p{
+    font-weight: bold;
+}
+.dataTables_length, .dataTables_info{
+    display: none !important;
+}
+th{
+    color:#d91f44;
+}
+#example_paginate{
+    display: none;
+}
+.dataTables_wrapper{
+    padding: 15px 60px;
+}
+.dataTables_filter{
+    display: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 60px;
+}
+.icon{
+    width: 27px;
+}
+.logo-div{
+    margin-top: -10px;
+}
+.centered{
+    text-transform: uppercase;
+}
+.logo{
+    width: 155px;
+
+}
+.flex-div{
+    display: flex;
+}
+.contentDiv{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid #d91f44;
+    object-fit: cover;
+}
+.flex-1{
+    line-height: 1.1;
+}
+.flex-div-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+.flex-2{
+    display: flex;
+}
+.sub-flex{
+    margin-right: 12px;
+}
+.flex-2 a{
+    text-decoration: none;
+    color: #24195d;
+    font-weight: bold;
+}
+@media only screen and (max-width: 720px){
+    .logo{
+        width: 105px;
+    }
+    p{
+        font-size: 14px;
+    }
+    .dataTables_wrapper{
+        padding: 0;
+    }
+    .header{
+        padding: 10px;
+    }
+    .flex-div-2{
+        padding: 0 10px;
+    }
+    .contentDiv{
+        text-align: right;
+    }
+    .centered{
+        font-size: 10px;
+    }
+    .table td{
+        padding: 0.75rem 1px;
+    }
+}

@@ -1,0 +1,442 @@
+
+@font-face {
+    font-family: TuesdayNight;
+    src: url('../Assets/fonts/TuesdayNight-Regular.otf');
+}
+@font-face {
+    font-family: myfont;
+    src: url('../Assets/fonts/MavenPro-Medium.ttf');
+}
+body {
+    background-color: #D91F43;
+    width: 100%;
+    margin: 0px;
+    font-family: myfont;
+    font-size: 23px;
+    color: white;
+}
+.container {
+    padding-top: 30px;
+    margin-left: 127px;
+    margin-right: 127px;
+    height: auto;
+}
+.header {
+    margin-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    width: 27px;
+}
+.logo-div{
+    margin-top: -10px;
+}
+.logo{
+    width: 155px;
+}
+.body_cont {
+    display: grid;
+    grid-template-columns: 45% 40% 15%;
+}
+.img_div {
+    height: 480px;
+    position: relative;  
+}
+.img-1{
+    width: 80px;
+    height: 80px;
+}
+.img-2{
+    width: 20px;
+}
+.img-3{
+    width: 225px;
+}
+.firstImageDiv{
+    position: absolute;
+    top: 101px;
+    
+}
+.secondImageDiv{
+    position: absolute;
+    left: 88px;
+}
+.img-4{
+    width: 54px;
+}
+.thirdImageDiv{
+    position: absolute;
+    left: 138px;
+    top: 35px;
+}
+.img-5{
+    width: 172px;
+}
+.fourthImage{
+    position: absolute;
+    left: 281px;
+    top: -53px;
+}
+.img-6{
+    width: 176px;
+}
+.fifthImageDiv{
+    position: absolute;
+    left: -39px;  
+    top: 358px ;
+}
+.img-7{
+    width: 221px;
+}
+.sixthImageDiv{
+    position: absolute;
+    left: 124px;
+    top: 306px;
+}
+.img-8{
+    width:  275px;
+}   
+.seventhImageDiv{
+    position: absolute;
+    left: 338px;
+    top: 460px;
+}
+.img-9{
+    width: 160px;
+}
+.eightImageDiv{
+    position: absolute;
+    left: 252px;
+    top: 171px;
+}
+.img-10{
+    width: 338px;
+}
+.ninethImageDiv{
+    position:relative;
+    right: 228px;
+    top: -123px;
+}
+.img-11{
+    width: 588px;
+}
+.tenthImageDiv{
+    position: absolute;
+    top: 263px;
+    left: 252px;
+}
+.img-12{
+    width: 109px;
+}
+.text_div {
+    color: white;
+    box-sizing: border-box;
+    padding-top: 80px;  
+    line-height: 1.3;
+    padding-left: 78px;  
+}
+.font{
+    font-family: TuesdayNight;
+    color: #24195D;
+    font-size: 80px;
+}
+.font-1{
+    font-family: TuesdayNight;
+    color: #FFA200;
+    font-size: 80px;
+}
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 379px;
+}
+.hide{
+    display: none;
+    margin-left: 126px;
+}
+.btn{
+    background-color: #24195D;
+    margin-top: 21px;
+    color: white;
+    border-bottom: none !important;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    border: 1px solid #24195D;
+    padding: 10px 20px;
+    margin-left: 103px;
+    cursor: pointer;
+}
+.hide a{
+    text-decoration: none;
+    color: white;
+}
+.side-nav a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 12px;
+}
+.bounce{
+    animation: pulse 5000ms;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes pulse{
+    from {transform: translate3d(0, 0, 0); }
+    to {transform: translate3d(0, 40px, 0); }
+}
+    
+input{
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 250px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #FFA200;
+}
+textarea{
+    padding: 10px 20px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 2px solid #FFA200;
+    width: 250px;
+}
+
+::placeholder{
+    color: white;
+    font-family: myfont;
+    font-size: 16px;
+}
+.active{
+    border-bottom: 2px solid #FFA200;
+}
+
+@media only screen and (max-width: 720px){
+    body{
+        font-size: 16px;
+    }
+    .body_cont{
+        grid-template-columns: 1fr;
+        padding: 10px 14px 0;
+        grid-template-areas: 
+        " first "
+        " second"
+        "third";
+    }
+    .text_div{
+        grid-area: third;
+        text-align: center;
+    }
+    .nav{
+        grid-area: second;
+    }
+    .img_div{
+        grid-area: first;
+    }
+    .header{
+        padding: 0 14px;
+    }
+    .img_div{
+        left: 0;
+    }
+    .text-div{
+        padding-left: 0;
+    }
+    .container{
+        margin-left: 0;  
+        width: 100%;   
+        margin-top: 20px;
+    }
+    .logo{
+        width: 109px;
+    }
+    .img-3{
+        width: 152px;
+    }
+    .img-4{
+        width: 29px;
+        
+    }
+    .secondImageDiv{
+        left: 64px;
+        top: 49px;
+    }
+    .img-5{
+        width: 95px;
+    }
+    .thirdImageDiv{
+        left: 94px;
+        top: 60px;
+    
+    }
+    .img-6{
+        width: 100px;
+    }
+    .fourthImage{
+        left: 174px;
+        top: 12px;
+    }
+    .eightImageDiv{
+        left: 157px;
+        top: 140px;
+    }
+    .img-10 {
+        width: 179px;
+    }
+    .img-12 {
+        width: 70px;
+    }
+    .tenthImageDiv{
+        top: 185px;
+        left: 149px;
+    }
+    .img-8{
+        width: 135px;
+    }
+    .sixthImageDiv{
+        left: 77px;
+        top: 259px;
+    }
+    .img-7{
+        width: 114px;
+    }
+    .fifthImageDiv{
+        left: -18px;
+        top: 275px;
+    }
+    .img-9{
+        width: 80px;
+    }
+    .seventhImageDiv{
+        left: 190px;
+        top: 332px;
+    }
+    .text_div{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .font, .font-1{
+        font-size: 30px;
+    }
+    .ninethImageDiv{
+        display: none;
+    }
+    .side-nav{
+        margin-top: 0;
+        flex-direction: row; 
+        justify-content: center;    
+    }
+    .side-nav a{
+        margin-bottom: 0;
+        margin-right: 10px;
+        padding-bottom: 20px;
+    }
+    
+}
+@media only screen and (min-width: 721px) and (max-width: 1023px){
+    .img-3{
+        width: 152px;
+    }
+    .img-4{
+        width: 29px;
+        
+    }
+    .secondImageDiv{
+        left: 64px;
+        top: 49px;
+    }
+    .img-5{
+        width: 95px;
+    }
+    .thirdImageDiv{
+        left: 94px;
+        top: 60px;
+    
+    }
+    .img-6{
+        width: 100px;
+    }
+    .fourthImage{
+        left: 174px;
+        top: 12px;
+    }
+    .eightImageDiv{
+        left: 157px;
+        top: 140px;
+    }
+    .img-10 {
+        width: 179px;
+    }
+    .img-12 {
+        width: 70px;
+    }
+    .tenthImageDiv{
+        top: 185px;
+        left: 149px;
+    }
+    .img-8{
+        width: 135px;
+    }
+    .sixthImageDiv{
+        left: 77px;
+        top: 259px;
+    }
+    .img-7{
+        width: 114px;
+    }
+    .fifthImageDiv{
+        left: -18px;
+        top: 275px;
+    }
+    .img-9{
+        width: 80px;
+    }
+    .seventhImageDiv{
+        left: 190px;
+        top: 332px;
+    }
+    .text_div{
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .font, .font-1{
+        font-size: 30px;
+    }
+    .ninethImageDiv{
+        display: none;
+    }
+    .side-nav{
+        margin-top: 270px;
+    }
+}
+@media only screen and(min-width: 1025px) and (max-width: 1040px){
+    .container{
+        padding: 0 37px;
+        margin: 0; 
+        margin-top: 20px; 
+    }
+    .font{
+        font-size: 30px;
+    }
+    .font-1{
+        font-size: 30px;
+    }
+    body{
+        font-size: 16px;
+    }
+    .ninethImageDiv{
+        display: none;
+    }
+    .text_div{
+        padding-left:105px;
+        margin-top: 50px;
+    }
+}

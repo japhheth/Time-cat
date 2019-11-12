@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Style/bootstrap.css">
+    <link rel="stylesheet" href="/Style/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="/Style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img class="logo" src="/Assets/images/Artboard 16.png" alt="logo">
+        </div>
+        <div class="flex-div">
+            <div class="contentDiv">
+             <p>Welcome, praise paul</p> 
+            </div>
+            <div class="imgDiv">
+                <img  class="img" src="/Assets/images/Emem.jpg" alt="profile picture">
+            </div>
+        </div>
+    </header>
+    <div class="flex-div-2">
+        <div class="flex-1">
+            <p>CAT Reports</p>
+            <p>1st April 2019</p>
+        </div>
+        <div class="flex-2">
+            <div class="sub-flex">
+                <a href="TimeCat.html">Go to Dashboard</a>
+            </div>
+            <div>
+                <a href="SignIn.html">Log out</a>
+            </div>
+            
+        </div>
+    </div>
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr class="centered">
+                <th>Name</th>
+                <th>Position held</th>
+                <th>Time in</th>
+                <th>Time Out</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Emem Bassey</td>
+                <td>Graphics Designer</td>
+                <td>Nil</td>
+                <td>Nil</td>  
+            </tr>
+            <tr>
+                <td>Congress</td>
+                <td>Graphics Dsigner</td>
+                <td>Nil</td>
+                <td>Nil</td>   
+            </tr>
+            <tr>
+                <td>Onyenuwe Japheth</td>
+                <td>Frontend Developer</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            <tr>
+                <td>Kenneth</td>
+                <td>Backend developer</td>
+                <td>Nil</td>
+                <td>Nil</td>   
+            </tr>
+            <tr>
+                <td>Nike</td>
+                <td>Content Creator</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+            <tr>
+                <td>Ofego Favor</td>
+                <td>Frontend developer</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+            <tr>
+                <td>Victor Sunday</td>
+                <td>Motion designer</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+            <tr>
+                <td>David Aji</td>
+                <td>Frontend developer</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+            <tr>
+                <td>Nduke Abasi</td>
+                <td>Frontend developer</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+            <tr>
+                <td>Ofiare David</td>
+                <td>Graphics designer</td>
+                <td>Nil</td>
+                <td>Nil</td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="/Js/jquery.min.js"></script>
+    <script src="/Js/jquery.datatable.js"></script>
+    <script src="/Js/datatables.bootstrap.jsN"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        } );
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: TuesdayNight;
+    src: url('../Assets/fonts/TuesdayNight-Regular.otf');
+ }
+ @font-face {
+    font-family: myfont;
+    src: url('../Assets/fonts/MavenPro-Medium.ttf');
+ }
+ body {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    font-family: myfont;
+    font-size: 23px;
+    color: white;
+ }
+ .font{
+    font-family: TuesdayNight;
+    color: #24195D;
+    font-size: 100px;
+    margin-top: 0;
+ }
+ .container {
+    margin-top: 45px;
+    margin-left: 127px;
+    margin-right: 127px;
+    height: auto;
+    padding: 0px;
+ }
+ .header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+ }
+ .icon{
+    width: 27px;
+ }
+ .logo-div{
+    margin-top: -10px;
+ }
+ .logo{
+    width: 155px;
+ 
+ }
+ .body-content{
+    margin-top: -15px;
+    position: relative;
+ }
+ .hide{
+    position: absolute;
+    right: 10px;
+    display: none;
+ }
+ .hide a{
+    text-decoration: none;
+    color: #24195d;
+    font-weight: bold;     
+ }
+ ::placeholder{
+    color: #24195d;
+    font-family: myfont;
+    font-size: 16px;
+}
+ form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ input{
+    border: none;
+    border-bottom: 2px solid #FFA200;
+    padding: 15px 20px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 300px;  
+ }
+ textarea{
+    border: none;
+    border-bottom: 2px solid #FFA200;
+    padding: 15px 20px;
+    outline: none;
+    width: 657px;
+ }
+ input[type=submit]{
+    width: 100px;
+    outline: none;
+    background-color: #24195D;
+    margin-top: 16px;
+    color: white;
+    border-bottom: none !important;
+    border-radius: 6px;
+ }
+ h1{
+    text-align: center;
+ }
+ .input{
+    margin-right: 10px;
+ }
+ @media only screen and (max-width: 720px){
+    .header{
+        padding: 0 14px;
+    }
+    
+    .container{
+        margin-left: 0;  
+        width: 100%;   
+        margin-top: 20px;
+    }
+    .logo{
+        width: 109px;
+    }
+    textarea{
+        width: 249px;
+    }
+    input{
+        width: 249px;
+    }
+    .input{
+        margin-right: 0;
+    }
+    .signUpDiv{
+        padding: 0 14px;
+        text-align: center;
+    }
+    
+ }
+ @media only screen and (min-width: 721px) and (max-width: 1024px){
+    .container{
+        margin: 45px 14px;
+    }
+    input, textarea{
+         width: 699px;
+     }
+     .input{
+         margin-right: 0;
+     }
+ }
